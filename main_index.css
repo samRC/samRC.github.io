@@ -1,3 +1,60 @@
-h1{
-	color:red;
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+body{
+	background-color:#4B4D52;
+	font-family: 'Poiret One', cursive, Monospace;
+	color:#B9B1A8;
 }
+
+#title{
+	font-size:10vw;
+}
+
+#half-background{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:50%;
+	height:100%;
+	background-color:#FFF2E7;
+	z-index:-10;
+	
+}
+
+#content{
+	z-index:1;
+}
+
+.big-icon{
+	color:#DE8642; /*#D0CABF;*/
+	text-shadow:10px 10px 10px;
+	font-size:15vw;
+	text-align:center;
+	
+	
+}
+
+.big-icon-text{
+	
+	font-size:5vw;
+	font-family:'Poiret One', cursive, Monospace;
+	color:#DE8642;
+}
+
+#gamepad-icon{
+	margin-left:50%;
+}
+
+#big-icon-row{
+	margin-top:25px;
+}
+
+#loader{
+	color:#D0CABF;
+	margin-left:48.5%; /*(50-(3/2)=48.5)*/
+	font-size:3vw;
+}
+
+
+
