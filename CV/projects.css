@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body{
+	background-color:#040404;
+	font-family: 'Press Start 2P', cursive, Monospace;
+	color:#0f0;
+}
+
+#title{
+	font-size:30px;
+}
+
+h3 {
+    color:rgb(0, 221, 92);
+}
+
+h4 {
+    color:rgb(0, 173, 72);
+}
+
+strong {
+    color:rgb(118, 200, 152);
+}
