@@ -5,6 +5,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <link rel="stylesheet" href="main_index.css">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+    body{
+        background-color:#040404;
+        font-family: 'Press Start 2P', cursive, Monospace;
+        color:#0f0;
+    }
+    #title{
+        font-size:50px;
+    }
+</style>
+<script>
+    var validRedirectPaths = ["/cv/projects/"]
+    var URL = window.location.href.toLowerCase().split("samrc.space");
+    var URLPath = (URL.length === 2 && validRedirectPaths.indexOf(URL[1]) > -1) ? URL[1] : null; 
+    /* Redirect case insensitive */
+    if (URLPath) {
+        window.location.href = `https://samrc.space${URLPath}`; 
+    }
+</script>
 </head>
 <body>
 <h1 id="title" style="text-align:center; color:#0f0;">Page Not Found</h1> 
