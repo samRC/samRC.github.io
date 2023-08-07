@@ -19,7 +19,9 @@
 <script>
     var validRedirectPaths = ["/cv/projects/"]
     var URL = window.location.href.toLowerCase().split("samrc.space");
-    var URLPath = (URL.length === 2 && validRedirectPaths.indexOf(URL[1]) > -1) ? URL[1] : null; 
+    var URLPath = (URL.length === 2 && validRedirectPaths.find(function (p) {
+         return ((p.indexOf(URL[1]) > -1) && (((Math.abs(p.length - URL[1].length) === 1) && URL[1][URL[1].length - 1] !== '/') || (Math.abs(p.length - URL[1].length) === 0))); 
+        })) ? URL[1] : null; 
     /* Redirect case insensitive */
     if (URLPath) {
         window.location.href = `https://samrc.space${URLPath}`; 
